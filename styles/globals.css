@@ -1,26 +1,103 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.dark-mode{
+    background-color: black;
+    color:white;
 }
 
-* {
-  box-sizing: border-box;
+.btn-outline-dark{
+    @apply border-2 border-black rounded-lg py-1 px-3
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.btn-outline-white{
+    @apply border-2 border-white rounded-lg py-1 px-3
+}
+
+.input{
+    color:black !important;
+}
+
+.btn-outline-dark:hover{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.btn-outline-white:hover{
+    color:black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.btn-outline-blue{
+    @apply border-2 border-blue-400 rounded-lg py-1 px-3
+}
+
+.btn-outline-blue:hover{
+    background-color:#60a5fa;
+    transition: 0.3s;
+}
+
+.btn-outline-green{
+    @apply border-2 border-green-700 rounded-lg py-1 px-3
+}
+
+.btn-outline-green:hover{
+    background-color:#15803d;
+    transition: 0.3s;
+}
+
+.btn-outline-danger{
+    @apply border-2 border-red-700 rounded-lg py-1 px-3
+}
+
+.btn-outline-danger:hover{
+    background-color:#b91c1c;
+    transition: 0.3s;
+}
+
+.category-card{
+    @apply py-5 px-16 border-2 border-gray-600 flex justify-center items-center gap-2
+}
+
+.category-card-mobile{
+    @apply py-1 px-10 border-2 border-gray-600 flex justify-center items-center gap-2 mr-2
+}
+
+.category-card:hover,.category-card-mobile:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.nav-list{
+    transform: translateY(-200%);
+    margin-bottom: -55%;
+}
+
+.tr-1{
+    transition: 0.8s;
+}
+
+.item-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.th-cell{
+    @apply p-2 border-2 border-gray-400 text-xl font-bold;
+}
+
+.td-cell{
+    @apply p-2 border-2 border-gray-400 text-center text-lg font-normal transition-all;
+}
+.cell-img:hover{
+    transform: scale(1.5) translateX(20%);
+
 }
