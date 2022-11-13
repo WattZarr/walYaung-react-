@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Item from "../components/Item";
-import { UserContext } from "./UserContext";
+import { UserContext } from "../UserContext";
 import { toast } from "react-toastify";
 
 const Detail = () => {

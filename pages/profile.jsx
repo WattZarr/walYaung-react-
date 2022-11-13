@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react"
 import { toast } from "react-toastify";
-import { UserContext } from "./UserContext"
+import { UserContext } from "../UserContext"
 import {FaUserCircle,FaPhoneAlt} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import Link from "next/link";

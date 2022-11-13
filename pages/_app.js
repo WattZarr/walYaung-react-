@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import '../styles/globals.css'
 import Layout from "./layout";
-import { UserContext } from './UserContext';
+import { UserContext } from '../UserContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';

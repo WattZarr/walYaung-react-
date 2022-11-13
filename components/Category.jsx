@@ -7,7 +7,7 @@ import {AiOutlineCar} from 'react-icons/ai'
 import {BiListUl} from 'react-icons/bi'
 import Link from 'next/link'
 import { useContext } from 'react'
-import { UserContext } from '../pages/UserContext'
+import { UserContext } from '../UserContext'
 import {CgDarkMode} from 'react-icons/cg';
 
 const Category = () => {

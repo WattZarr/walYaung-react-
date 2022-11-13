@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import Table from "../components/Table";
-import {UserContext} from "../pages/UserContext";
+import {UserContext} from "../UserContext";
 import { toast } from "react-toastify";
 import axios from "axios";
 

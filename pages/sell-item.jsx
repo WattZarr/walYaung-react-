@@ -2,7 +2,7 @@ import axios from "axios";
 import Router, { useRouter } from "next/router";
 import { useContext, useEffect, useRef, useState } from "react"
 import { toast } from "react-toastify";
-import { UserContext } from "./UserContext";
+import { UserContext } from "../UserContext";
 
 const SellItem = () => {
 

@@ -1,7 +1,7 @@
 import {HiMenu} from 'react-icons/hi';
 import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
-import {UserContext} from '../pages/UserContext'
+import {UserContext} from '../UserContext'
 import { useRouter } from 'next/router';
 
 

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useRouter } from "next/router"
 import { useEffect, useState,useContext } from "react";
 import { toast } from "react-toastify";
-import {UserContext} from '../UserContext'
+import {UserContext} from '../../UserContext'
 
 const Edit = () => {
   

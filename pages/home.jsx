@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react"
 import Category from "../components/Category"
 import Item from "../components/Item"
 import Link from "next/link"
-import { UserContext } from "./UserContext"
+import { UserContext } from "../UserContext"
 
 const HomePage = () => {
 
