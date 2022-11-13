@@ -5,7 +5,7 @@ import {UserContext} from "../pages/UserContext";
 import { toast } from "react-toastify";
 import axios from "axios";
 
-const unsoldItems = () => {
+const UnsoldItems = () => {
 
     const {user,token,logout} = useContext(UserContext);
     const [userData,setUserData] = useState({});
@@ -56,4 +56,4 @@ const unsoldItems = () => {
   )
 }
 
-export default unsoldItems
+export default UnsoldItems

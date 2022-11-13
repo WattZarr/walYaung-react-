@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { UserContext } from "./UserContext";
 
 
-const editItem = () => {
+const EditItem = () => {
 
   const {user,token,logout} = useContext(UserContext);
 
@@ -75,7 +75,7 @@ const editItem = () => {
                   <input type="text" value={data.name} onChange={(e)=>setData({...data,name:e.target.value})} id="name" className="input p-1 rounded-lg shadow-lg w-full"  required/>
                   </div>
                   <div className="mb-4">
-                  <label htmlFor="image" className="font-normal block">ပစ္စည်းဓာတ်ပုံ<span className="text-sm text-red-400">(If you don't select any photo,we will use old photo.)</span></label>
+                  <label htmlFor="image" className="font-normal block">ပစ္စည်းဓာတ်ပုံ<span className="text-sm text-red-400">(If you do not select any photo,we will use old photo.)</span></label>
                   <input type="file" onChange={e => handleImage(e.target.files)} name="image" id="image" className="input py-3 border-none w-full" />
                   </div>
                   <div className="mb-4">
@@ -164,4 +164,4 @@ const editItem = () => {
   )
 }
 
-export default editItem
+export default EditItem

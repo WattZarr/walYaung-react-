@@ -55,7 +55,7 @@ const Login = () => {
             <div className="flex justify-center">
               <button className="btn-outline-dark" type="submit">Log In</button>
             </div>
-            <p className="font-normal text-sm-center mt-4">Didn't have an account yet?</p>
+            <p className="font-normal text-sm-center mt-4">Did not have an account yet?</p>
             <p className="font-normal text-blue-400 text-sm-center mt-4"><Link href={"/auth/register"}>Register Here</Link></p>
           </div>
       </form>
