@@ -13,7 +13,7 @@ const HomePage = () => {
   const {searchData} = useContext(UserContext);
 
   const getItem = async () => {
-     await axios.get(process.env.NEXT_PUBLIC_API+"api/items")
+     await axios.get("https://walyaungpar.000webhostapp.com/api/items")
     .then(response => {
       setItems(response.data.items)      
     }).catch(error=>console.log(error))
